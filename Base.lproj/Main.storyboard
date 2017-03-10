@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1yv-mu-Lka">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Convenient Pet Door-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConvenientPetDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtA-Iw-ppO">
+                                <rect key="frame" x="116" y="250" width="88" height="30"/>
+                                <state key="normal" title="Door Control"/>
+                                <connections>
+                                    <segue destination="yGO-iF-OsL" kind="push" id="kJs-Tj-WDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-aS-aXH">
+                                <rect key="frame" x="92" y="288" width="136" height="30"/>
+                                <state key="normal" title="Lock Control"/>
+                                <connections>
+                                    <segue destination="kv1-Lb-OzY" kind="push" id="q5F-PF-M2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLe-UO-zoR">
+                                <rect key="frame" x="107" y="212" width="106" height="30"/>
+                                <state key="normal" title="Door Status"/>
+                                <connections>
+                                    <segue destination="06L-7I-BDd" kind="push" id="enl-3L-ajN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l22-vU-hZs">
+                                <rect key="frame" x="125" y="326" width="71" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJi-oF-yOr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqi-6o-xgn">
+                                <rect key="frame" x="85" y="100" width="150" height="52"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcN-Vp-9Ut">
+                                <rect key="frame" x="181" y="153" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select from the following commands:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAI-Lu-T5a">
+                                <rect key="frame" x="18" y="153" width="284" height="25"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Convenient Pet Door" id="8Wi-9P-qJK"/>
+                    <connections>
+                        <outlet property="Camera" destination="l22-vU-hZs" id="xYF-rb-DZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="274"/>
+        </scene>
+        <!--Door Status-->
+        <scene sceneID="2Cc-vv-Flk">
+            <objects>
+                <viewController title="Door Status" id="06L-7I-BDd" customClass="StatusViewController" customModule="ConvenientPetDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qBZ-iG-cQE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhy-l2-qoH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L90-6o-j4G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1T-FP-FqM">
+                                <rect key="frame" x="32" y="106" width="113" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Door Status"/>
+                                <connections>
+                                    <action selector="clickedButton" destination="06L-7I-BDd" eventType="touchUpInside" id="Paw-dP-9nM"/>
+                                    <action selector="unclickButton" destination="06L-7I-BDd" eventType="touchUpInside" id="QiN-DK-eyV"/>
+                                    <action selector="unclickButton2" destination="06L-7I-BDd" eventType="touchUpInside" id="Y9g-w1-3ex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-tL-Dvq">
+                                <rect key="frame" x="142" y="502" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.89386047980000005" green="0.019552171100000001" blue="0.046295671179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFunc" destination="06L-7I-BDd" eventType="touchUpInside" id="TGL-zy-cPD"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-Bn-se0">
+                                <rect key="frame" x="20" y="180" width="280" height="295"/>
+                                <color key="backgroundColor" red="0.87597205658302202" green="0.87486061208411336" blue="0.89427477904040409" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydz-my-ndQ">
+                                <rect key="frame" x="186" y="106" width="93" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lock Status"/>
+                                <connections>
+                                    <action selector="clickedButton2" destination="06L-7I-BDd" eventType="touchUpInside" id="PSM-ho-fjG"/>
+                                    <action selector="unclickButton2" destination="06L-7I-BDd" eventType="touchUpInside" id="5SD-L4-WY3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Door Status" id="4ks-df-2zm">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="hRC-vL-yMn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="rSU-tL-Dvq" id="x8p-g9-mkj"/>
+                        <outlet property="doorStatusButton" destination="V1T-FP-FqM" id="GCU-bV-t13"/>
+                        <outlet property="lockStatusButton" destination="ydz-my-ndQ" id="cVn-LA-ntO"/>
+                        <outlet property="textArea" destination="azJ-Bn-se0" id="uXo-IS-hPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjh-qt-VhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="-599"/>
+        </scene>
+        <!--Lock Control-->
+        <scene sceneID="bTI-VL-8pW">
+            <objects>
+                <viewController id="kv1-Lb-OzY" customClass="LockViewController" customModule="ConvenientPetDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJk-rz-cbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="vF8-Zb-Tdm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hpD-8x-g0b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6U-Jy-ehc">
+                                <rect key="frame" x="142" y="508" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.89386047980000005" green="0.019552171100000001" blue="0.046295671179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFunc" destination="kv1-Lb-OzY" eventType="touchUpInside" id="DFO-m3-wky"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HKR-ew-Qn7">
+                                <rect key="frame" x="20" y="177" width="280" height="296"/>
+                                <color key="backgroundColor" red="0.87597205659999999" green="0.87486061209999999" blue="0.89427477899999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqP-UU-6X5">
+                                <rect key="frame" x="164" y="108" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Unlock Door"/>
+                                <connections>
+                                    <action selector="clickedButton2" destination="kv1-Lb-OzY" eventType="touchUpInside" id="Xyf-f1-SYy"/>
+                                    <action selector="unclickButton2" destination="kv1-Lb-OzY" eventType="touchUpInside" id="x8U-j6-jw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-lX-mwn">
+                                <rect key="frame" x="47" y="108" width="95" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lock Door"/>
+                                <connections>
+                                    <action selector="clickedButton" destination="kv1-Lb-OzY" eventType="touchUpInside" id="gQJ-EU-ags"/>
+                                    <action selector="unclickButton" destination="kv1-Lb-OzY" eventType="touchUpInside" id="ReN-tr-ewk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lock Control" id="y8c-C9-XSH">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="h6a-Xs-Lrz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="W6U-Jy-ehc" id="pUH-d3-VIY"/>
+                        <outlet property="lockButton" destination="ilh-lX-mwn" id="INc-dE-kc3"/>
+                        <outlet property="textArea" destination="HKR-ew-Qn7" id="dk5-3C-kTC"/>
+                        <outlet property="unlockButton" destination="IqP-UU-6X5" id="ydt-RW-Vxu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cta-C0-Obe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="107"/>
+        </scene>
+        <!--Door Control-->
+        <scene sceneID="Be1-Et-sdf">
+            <objects>
+                <viewController id="yGO-iF-OsL" customClass="OpenViewController" customModule="ConvenientPetDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6p-xG-S7f"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRv-iB-vV9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TtK-Ou-w5K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owM-zp-UCa">
+                                <rect key="frame" x="48" y="108" width="95" height="30"/>
+                                <state key="normal" title="Open Door"/>
+                                <connections>
+                                    <action selector="clickedButton" destination="yGO-iF-OsL" eventType="touchUpInside" id="goL-fO-VeZ"/>
+                                    <action selector="unclickButton" destination="yGO-iF-OsL" eventType="touchUpInside" id="9k0-cZ-OXX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-5L-nnF">
+                                <rect key="frame" x="23" y="176" width="274" height="295"/>
+                                <color key="backgroundColor" red="0.87597205659999999" green="0.87486061209999999" blue="0.89427477899999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzE-vf-qnQ">
+                                <rect key="frame" x="142" y="504" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.89386047980000005" green="0.019552171100000001" blue="0.046295671179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearFunc" destination="yGO-iF-OsL" eventType="touchUpInside" id="X12-WR-oCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkZ-8k-Bue">
+                                <rect key="frame" x="172" y="108" width="95" height="30"/>
+                                <state key="normal" title="Close Door"/>
+                                <connections>
+                                    <action selector="clickedButton2" destination="yGO-iF-OsL" eventType="touchUpInside" id="d5Z-I6-ins"/>
+                                    <action selector="unclickButton2" destination="yGO-iF-OsL" eventType="touchUpInside" id="o1q-aL-DXl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Door Control" id="pko-47-Ltc">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="CRi-AI-e15"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="WzE-vf-qnQ" id="o0c-Ze-4Hq"/>
+                        <outlet property="closeButton" destination="mkZ-8k-Bue" id="9Mh-5c-8gU"/>
+                        <outlet property="openButton" destination="owM-zp-UCa" id="4a2-gK-PfZ"/>
+                        <outlet property="textArea" destination="lY5-5L-nnF" id="TAn-cn-AhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqJ-am-d2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="daT-sy-Uob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1yv-mu-Lka" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ro5-oC-4MG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZIT-jw-fo9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-V8-mdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.466666666666669" y="195.96000000000001"/>
+        </scene>
+    </scenes>
+</document>
