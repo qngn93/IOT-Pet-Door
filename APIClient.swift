@@ -48,7 +48,7 @@ class APIClient {
     }
     
     func processPOSTData (service: APIService, id: String!, urlSuffix: NSArray!, params: [String:String]!=[:], responseJson: NSDictionary!) {
-        //do something with data
+        //function POST data
     }
     
     
@@ -64,7 +64,7 @@ class APIClient {
             callback: { (responseJson: NSDictionary!, responseError: NSError!) -> Void in
                 if (responseError != nil) {
                     logger.logEvent(responseError!.description)
-                    // Handle here the error response in some way
+                    // Handle error here
                 }
                 else {
                     blockSelf.processGETData(service, id: id, urlSuffix: urlSuffix, params: params, responseJson: responseJson)
@@ -73,7 +73,7 @@ class APIClient {
     }
     
     func processGETData (service: APIService, id: String!, urlSuffix: NSArray!, params: [String:String]!=[:], responseJson: NSDictionary!) {
-        // do something with data here
+        // function GET data
     }
     
     func apiRequest (
@@ -107,7 +107,7 @@ class APIClient {
                 serviceURL += "?" + asURLString(inputData)
                 request.URL = NSURL(string: serviceURL)
             }
-            //now make the request
+            //make request
             let x = "(0,)"
             let y = "(1,)"
             let doorStatusURL = "http://104.197.172.164:12000/getOpenStatus"
@@ -125,7 +125,6 @@ class APIClient {
                         do {
                             try jsonResult = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
                         } catch {
-                            // we expect an “OK” from the API, not JSON, so it’s OK if we don’t do anything here
                             //print("json error: \(error)")
                         }
 
