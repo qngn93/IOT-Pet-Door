@@ -47,7 +47,6 @@ class OpenAPIClient {
     }
     
     func processPOSTData (service: OpenAPIService, id: String!, urlSuffix: NSArray!, params: [String:String]!=[:], responseJson: NSDictionary!) {
-        //do something with data
     }
     
     
@@ -72,7 +71,7 @@ class OpenAPIClient {
     }
     
     func processGETData (service: OpenAPIService, id: String!, urlSuffix: NSArray!, params: [String:String]!=[:], responseJson: NSDictionary!) {
-        // do something with data here
+        //function GET data
     }
     
     func apiRequest (
@@ -106,7 +105,7 @@ class OpenAPIClient {
                 serviceURL += "?" + asURLString(inputData)
                 request.URL = NSURL(string: serviceURL)
             }
-            //now make the request
+            //Make a request
             let logger: UILogger = viewController.logger
             let session = NSURLSession.sharedSession()
             let task = session.dataTaskWithRequest(request) { (data : NSData?, urlResponse : NSURLResponse?, error: NSError?) -> Void in
@@ -120,7 +119,6 @@ class OpenAPIClient {
                         do {
                             try jsonResult = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
                         } catch {
-                            // we expect an “OK” from the API, not JSON, so it’s OK if we don’t do anything here
                             //print("json error: \(error)")
                         }
                     }
