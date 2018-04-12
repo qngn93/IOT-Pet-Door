@@ -20,7 +20,24 @@ iOS 7.0+
 
 Xcode 7.3
 
+# ViewController.swift
 
-# Sample UI
+Basic UI with buttons to segue into Lock/Unlock, Open/Close, and camera scenes
+
+# LoggerUI.swift
+
+Keeps a logger in View controller
+
+# LockAPIClient.swift & OpenAPIClient.swift
+
+Main method that contains:
+
+POST, GET Handlers
+
+Composes and Defines URL of Service
+
+Parses JSON Response
+
+
 
 
