@@ -22,15 +22,13 @@ Xcode 7.3
 
 # ViewController.swift
 
-Basic UI with buttons to segue into Lock/Unlock, Open/Close, and camera scenes
+UI for Lock/Unlock, Open/Close, and camera scenes
 
 # LoggerUI.swift
 
 Keeps a logger in View controller
 
 # LockAPIClient.swift & OpenAPIClient.swift
-
-Main method that contains:
 
 POST, GET Handlers
 
